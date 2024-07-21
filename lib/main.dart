@@ -37,9 +37,9 @@ class MyApp extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             theme: ThemeData(
               scaffoldBackgroundColor: Colors.white,
-              // colorScheme: const ColorScheme.light(
-              //   primary: primaryColor,
-              // ),
+              colorScheme: const ColorScheme.light(
+                primary: primaryColor,
+              ),
               appBarTheme: AppBarTheme(
                   // systemOverlayStyle: const SystemUiOverlayStyle(
                   //   statusBarColor: primaryColor,
@@ -49,7 +49,6 @@ class MyApp extends StatelessWidget {
                   titleTextStyle: TextStyles.appBarStyle,
                   elevation: 0,
                   iconTheme: const IconThemeData(color: Colors.white)),
-                  
             ),
             home: HomePage());
       },

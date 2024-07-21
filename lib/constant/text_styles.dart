@@ -17,10 +17,9 @@ class FontSizes {
 
 class TextStyles {
   static TextStyle appBarStyle = TextStyle(
-      fontFamily: FontStyles.caveat,
-      fontSize: 24.sp,
-      fontWeight: FontWeight.bold,
-      letterSpacing: 1.0);
+    fontFamily: FontStyles.publicSans_semiBold,
+    fontSize: 20.sp,
+  );
   static TextStyle formTxtStyle = TextStyle(
     fontFamily: FontStyles.caveat,
     fontSize: 14.sp,
@@ -43,12 +42,11 @@ class TextStyles {
     fontWeight: FontWeight.bold,
   );
   static TextStyle cardTextStyle = TextStyle(
-      fontSize: 20.sp,
-      fontFamily: FontStyles.caveat,
-      fontWeight: FontWeight.bold);
+    fontSize: 18.sp,
+    fontFamily: FontStyles.publicSans_Medium,
+  );
 
-  static TextStyle subtitleTextStyle = TextStyle(
-      fontSize: 18.sp,
-      fontFamily: FontStyles.caveat,
-      fontWeight: FontWeight.normal);
+  static TextStyle subtitleTextStyle = const TextStyle(
+    fontFamily: FontStyles.publicSans,
+  );
 }

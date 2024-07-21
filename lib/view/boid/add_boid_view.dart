@@ -96,11 +96,12 @@ class _AddBoidViewState extends ConsumerState<AddBoidView> {
                     color: primaryColor,
                   ),
                   child: Text(
-                    'Submit',
+                    'SAVE',
                     style: TextStyle(
-                        fontSize: 24.sp,
-                        color: whiteColor,
-                        fontFamily: FontStyles.caveatSemibold),
+                      fontSize: 16.sp,
+                      color: whiteColor,
+                      fontFamily: FontStyles.publicSans_Medium,
+                    ),
                   ),
                 ),
               )

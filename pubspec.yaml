@@ -97,6 +97,15 @@ flutter:
     - family: IndieFlower
       fonts:
         - asset: fonts/indie_flower/IndieFlower-Regular.ttf
+    - family: PublicSans-Regular
+      fonts:
+        - asset: fonts/public_sans/PublicSans-Regular.otf
+    - family: PublicSans-SemiBold
+      fonts:
+        - asset: fonts/public_sans/PublicSans-SemiBold.otf
+    - family: PublicSans-Medium
+      fonts:
+        - asset: fonts/public_sans/PublicSans-Medium.otf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

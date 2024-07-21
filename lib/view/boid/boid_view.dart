@@ -60,6 +60,8 @@ class BoidView extends ConsumerWidget {
                   ],
                 ),
                 child: Container(
+                  padding:
+                      EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(12.r),
@@ -73,37 +75,37 @@ class BoidView extends ConsumerWidget {
                       ),
                     ],
                   ),
-                  child: Padding(
-                    padding:
-                        EdgeInsets.symmetric(horizontal: 12.w, vertical: 2.h),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          boidData.name,
-                          style: TextStyles.cardTextStyle,
-                        ),
-                        Row(
-                          children: [
-                            Text(
-                              boidData.boidNumber,
-                              style: TextStyles.subtitleTextStyle,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        boidData.name,
+                        style: TextStyles.cardTextStyle,
+                      ),
+                      Row(
+                        children: [
+                          Text(
+                            boidData.boidNumber,
+                            style: TextStyles.subtitleTextStyle.copyWith(
+                              color: Colors.black54,
                             ),
-                            IconButton(
-                              padding: EdgeInsets.zero,
-                              constraints: const BoxConstraints(),
-                              icon: Icon(Icons.copy, size: 18.r),
-                              onPressed: () {
+                          ),
+                          SizedBox(width: 8.w),
+                          GestureDetector(
+                              onTap: () {
                                 Clipboard.setData(
                                     ClipboardData(text: boidData.boidNumber));
                                 Toasts.showSuccess(
                                     'BOID Number copied to clipboard');
                               },
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
+                              child: Icon(
+                                Icons.copy,
+                                size: 16.r,
+                              ))
+                        ],
+                      ),
+                    ],
                   ),
                 ),
               ),
